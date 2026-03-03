@@ -1,0 +1,104 @@
+/* =======================
+   HEADER PRO (GeSaProv)
+======================= */
+.navbar-pro{
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  background: linear-gradient(90deg, rgba(13,110,253,.10), rgba(255,255,255,.95));
+  backdrop-filter: blur(6px);
+}
+.brand-chip{
+  display:flex; align-items:center; gap:.65rem;
+  padding:.25rem .6rem;
+  border-radius: 999px;
+  background: rgba(13,110,253,.09);
+  border: 1px solid rgba(13,110,253,.15);
+  white-space: nowrap;
+}
+.brand-chip .logo{
+  width:34px; height:34px; border-radius: 50%;
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(13,110,253,.18);
+  border: 1px solid rgba(13,110,253,.18);
+}
+.brand-chip .logo i{ font-size:15px; color:#0d6efd; }
+.brand-chip .txt{ line-height:1.05; }
+.brand-chip .txt .main{ font-weight:900; letter-spacing:.2px; }
+.brand-chip .txt .sub{ font-size:.78rem; color:#6c757d; margin-top:1px; }
+.plan-badge{
+  font-size:.70rem; font-weight:900; letter-spacing:.6px;
+  padding:.25rem .45rem; border-radius: 10px;
+  background: rgba(255,193,7,.18);
+  border: 1px solid rgba(255,193,7,.35);
+  color:#b78103;
+  text-transform: uppercase;
+}
+.tenant-pill{
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.25rem .55rem; border-radius: 999px;
+  background: rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.06);
+  color:#495057;
+  max-width: 320px;
+}
+.tenant-pill .dot{
+  width:8px; height:8px; border-radius:50%;
+  background:#28a745;
+  box-shadow: 0 0 0 3px rgba(40,167,69,.15);
+}
+.tenant-pill .name{
+  font-size:.83rem;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  max-width: 260px;
+  display:inline-block;
+}
+.user-mini{
+  display:flex; align-items:center; gap:.55rem;
+  padding:.25rem .55rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(0,0,0,.06);
+}
+.user-mini .avatar{
+  width:34px; height:34px; border-radius: 50%;
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(0,0,0,.06);
+}
+.user-mini .avatar i{ opacity:.85; }
+.user-mini .meta{ line-height:1.05; min-width:0; }
+.user-mini .meta .n{
+  font-weight:800; font-size:.88rem; max-width: 180px;
+  white-space: nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.user-mini .meta .r{
+  font-size:.76rem; color:#6c757d; max-width: 180px;
+  white-space: nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+
+/* Content header */
+.content-header-pro{
+  padding: 14px 0 0 0;
+}
+.page-title{
+  font-weight: 900;
+  letter-spacing: .2px;
+  margin: 0;
+}
+.breadcrumb-pro{
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: .85rem;
+}
+.breadcrumb-pro .breadcrumb-item + .breadcrumb-item::before{
+  content: "\203A";
+  color: #adb5bd;
+  padding: 0 .4rem;
+}
+
+/* responsive tweaks */
+@media (max-width: 991px){
+  .tenant-pill{ display:none; } /* en móvil: no saturar */
+  .brand-chip .txt .sub{ display:none; }
+}
